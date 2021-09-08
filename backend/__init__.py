@@ -1,0 +1,1 @@
+from .parser import parse_piece_to_piece_model
