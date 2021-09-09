@@ -71,3 +71,11 @@ class Piece(OneRecordObject):
     dimensions: Dimensions
     service_requests: List[ServiceRequest]
     shipment: Shipment
+
+
+@dataclass
+class Reference(OneRecordObject):
+    type: str
+    document_type: str
+    document_checksum: str
+    document_link: str
