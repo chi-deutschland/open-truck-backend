@@ -16,15 +16,15 @@ def parse_piece_to_piece_model(json_ld: str) -> Piece:
         .get("https://onerecord.iata.org/Dimensions#length", "")
     dims = Dimensions(
         id='',
-        height= Value(
+        height=Value(
             id=height.get('@id', ''),
             value=height.get("https://onerecord.iata.org/Value#value", ''),
             unit=height.get("https://onerecord.iata.org/Value#unit", ''),),
-        length= Value(
+        length=Value(
             id=length.get('@id', ''),
             value=length.get("https://onerecord.iata.org/Value#value", ''),
             unit=length.get("https://onerecord.iata.org/Value#unit", ''),),
-        width= Value(
+        width=Value(
             id=width.get('@id', ''),
             value=width.get("https://onerecord.iata.org/Value#value", ''),
             unit=width.get("https://onerecord.iata.org/Value#unit", ''),),)
