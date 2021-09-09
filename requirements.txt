@@ -3,3 +3,4 @@ gunicorn==20.1.0
 requests==2.25.1
 marshmallow-dataclass==8.5.3
 google-cloud-datastore==2.1.6
+flask-cors
