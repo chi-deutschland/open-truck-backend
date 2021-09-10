@@ -1,6 +1,6 @@
 import json
 
-from .models import Piece, Value, Dimensions, ServiceRequest, Item, Product, Shipment, WayBillNumber
+from .app_models import Piece, Value, Dimensions, ServiceRequest, Item, Product, Shipment, WayBillNumber
 
 
 def parse_piece_to_piece_model(json_ld: str) -> Piece:

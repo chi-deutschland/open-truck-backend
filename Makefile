@@ -10,7 +10,7 @@ VERSION ?=
 STAGE ?=
 
 update_version:
-	echo VERSION > ./VERSION
+	echo $(VERSION) > ./VERSION
 
 build:
 	docker buildx build \
@@ -28,5 +28,5 @@ deploy:
         --platform managed \
 		--allow-unauthenticated \
         --max-instances=1 \
-		--set-env-vars "STAGE=$(STAGE)" \
-		--set-env-vars "VERSION=$(VERSION)"
+		--set-env-vars "SERVICE=$(SERVICE)" \
+		--set-env-vars "API_TOKEN=$(API_TOKEN)"
